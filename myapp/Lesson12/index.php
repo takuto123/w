@@ -10,9 +10,11 @@
         
         echo '接続成功<br>';
 
-        $sql = "SELECT first_name FROM users";
+        // $sql = "SELECT first_name FROM users";苗字のみ表示の場合
+
+        $sql = "SELECT * FROM users";//useテーブル全て
         $stmt = $dbh -> query($sql);
-        $result = $stmt -> fetchAll(PDO::FETCH_COLUMN);
+        $result = $stmt -> fetchAll(PDO::FETCH_ASSOC);
         print_r($result);
 
         $dbh = null;
