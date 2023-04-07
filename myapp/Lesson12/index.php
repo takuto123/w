@@ -12,7 +12,7 @@
 
         // $sql = "SELECT first_name FROM users";苗字のみ表示の場合
 
-        $sql = "SELECT * FROM users";//useテーブル全て
+        $sql = "SELECT * FROM users";//useテーブル全て表示
         $stmt = $dbh -> query($sql);
         $result = $stmt -> fetchAll(PDO::FETCH_ASSOC);
         print_r($result);
