@@ -35,7 +35,6 @@
             $dbh = new PDO($dsn, $user, $pass);
             echo '接続成功';
             $dbh = null;
-            return $result2;
         } catch(PDOExeption $e){
                 echo '接続失敗'.$e->getMessage();
                 exit();
