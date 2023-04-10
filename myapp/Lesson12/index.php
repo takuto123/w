@@ -43,10 +43,4 @@
     $deta = dbConnect();
     echo $data;
 
-
-    
-
- 
-
-
 ?>
